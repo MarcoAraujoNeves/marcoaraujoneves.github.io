@@ -1,0 +1,32 @@
+backend:
+  name: git-gateway
+  repo: marcoaraujoneves/marcoaraujoneves.github.io
+  branch: publishing
+
+publish_mode: editorial_workflow
+media_folder: '/src/assets/images'
+public_folder: '../src/assets/images'
+
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: '/posts/'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - {
+          label: 'Cover Image',
+          name: 'cover',
+          choose_url: false,
+          widget: 'image',
+          media_folder: '/src/assets/images',
+          public_folder: '',
+        }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Tags', name: 'tags', widget: 'list', default: ['blogging'] }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
