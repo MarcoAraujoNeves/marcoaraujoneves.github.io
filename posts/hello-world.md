@@ -1,11 +1,14 @@
 ---
-cover: code.jpg
-title: Hello World - First Post (MOCK)
-description: Hello World! This is my first blog post on this site.
-category: blogging
+cover: franck-cax85x-ddbk-unsplash.jpg
+title: Connect a ESP32 board to Wi-Fi via Blluetooth
+description: An approach to connect your custom IoT devices to the Internet
+  without hard-coding your credentials.
+category: iot
 tags:
-  - initial
-date: 2023-03-10T21:17:03.284Z
+  - esp-32
+  - ble
+date: 2023-03-17T21:33:10.163Z
 ---
+Hard-coded credentials are the fastest way to connect your ESP32 board to a Wi-Fi network. This method is straightforward and effective. However, if you need to use your device elsewhere or update your credentials, you must compile and re-upload the code to your board.
 
-This is just a template for a future post!
+A better way to handle these situations is to incorporate a connection feature built using the BLE module. With this feature, you can use a smartphone to connect to your board, select a network, and enter its password. It is even more interesting when building custom IoT devices, which often run for extended periods with minimal maintenance.
