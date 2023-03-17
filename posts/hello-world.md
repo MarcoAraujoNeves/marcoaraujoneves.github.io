@@ -3,7 +3,7 @@ cover: franck-cax85x-ddbk-unsplash.jpg
 title: Connect a ESP32 board to Wi-Fi via Blluetooth
 description: An approach to connect your custom IoT devices to the Internet
   without hard-coding your credentials.
-category: iot
+category: IoT
 tags:
   - esp-32
   - ble
